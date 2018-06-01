@@ -8,18 +8,15 @@ const Alexander = `
 class Alexander : public Person {
 
         std::time_t unix_dob;
-        std::string name                    = "Alexander Wilson";
-        std::string my_email                = "acwilson96@protonmail.com";
-        std::string loc                     = "Edinburgh, United Kingdom";
+        std::string name                   = "Alexander Wilson";
+        std::string email                  = "acwilson96@protonmail.com";
+        std::string degree                 = "BSc Computer Science";
+        std::string university             = "University of Edinburgh";
+        std::string location               = "Edinburgh / London";
 
-        std::vector&lt;std::string> interests  = {
+        std::vector&lt;std::string> interests = {
             "Computer Architecture", "Code Optimisation",
             "Compilers", "Parallel Architectures/Systems"
-        };
-
-        std::vector&lt;std::string> hobbies    = {
-            "Programming", "Sudoku",
-            "Skiing", "Skateboarding"
         };
 
         Alexander() {

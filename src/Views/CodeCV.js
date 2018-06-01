@@ -30,12 +30,12 @@ class CodeCV extends Component {
                     <div id="console">
                         $ <TypeWriter onTypingEnd={this.props.compile} fixed="true" typing={1}>
                             clang++ alexander.cpp -o resume.out
-                            <br />
+                            {/* <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                         </TypeWriter>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ class CodeCV extends Component {
                     <a className="compile-but" onClick={this.compile}>compile</a>
                     <br />
                     <br />
-                    <div id="console" style={{width: 355}}>
+                    <div id="console" style={{width: 310.88}}>
                         $
                     </div>
                 </div>

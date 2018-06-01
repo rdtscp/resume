@@ -5,13 +5,16 @@
     align-items:center;
     padding: 10px;
     flex-direction: column;
+    line-height: 1.5;
+    font-size: 14px;
+    height: 100vh;
 }
 
-.compile-but {
+/* .compile-but {
     color: #3273dc;
     cursor: pointer;
     text-decoration: none;
-}
+} */
 
 #console {
     text-align: left;
@@ -35,10 +38,6 @@
 
 .text-center {
     text-align: center;
-}
-
-.hidden {
-    font-size: 0;
 }
 
 .black {

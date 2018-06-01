@@ -5,7 +5,7 @@ import CompiledCV from './Views/CompiledCV.js';
 
 import 'bulma/css/bulma.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './styles.css';
+// import './styles.css';
 
 class App extends Component {
 
@@ -18,17 +18,19 @@ class App extends Component {
 
   compile = (e) => this.setState({ compiled: true });
 
+  source = (e) => this.setState({ compiled: false });
+
   isMobileDevice = () => {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   };
 
   render() {
     if (this.state.compiled) {
-          return (<CompiledCV />);
+          return (<CompiledCV viewSource={this.source} />);
     } else {
       if (this.isMobileDevice()) {
       alert("Cannot View Source on Mobile");
-        return (<CompiledCV />);
+        return (<CompiledCV viewSource={this.source} />);
       }
       else
         return (<CodeCV compile={this.compile} />);

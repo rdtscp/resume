@@ -20,7 +20,7 @@ class CompiledCV extends Component {
               <span class="icon"><i class="fa fa-terminal"></i></span>Software Developer
               </h2>
               <h2 class="subtitle">
-                  <a href="/acwilson96.pdf">Download</a>
+                  <a href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
               </h2>
             </div>
           </div>
