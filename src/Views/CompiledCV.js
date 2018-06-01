@@ -6,9 +6,12 @@ class CompiledCV extends Component {
     document.body.style = 'background: white;';
     return (
       <div className="columns">
+        
         <div className="column"></div>
         <div className="column is-two-thirds">        
-          {/* <Contents /> */}
+          <div className="darkMode">
+            <a><span className="icon black"  onClick={this.props.viewSource}><i className="fa fa-2x fa-address-card"></i></span>&nbsp;</a>
+          </div>
 
           {/* Name */}
           <div className="hero-body">
@@ -17,10 +20,9 @@ class CompiledCV extends Component {
                   Alexander Wilson
               </h1>
               <h2 class="subtitle">
-              <span class="icon"><i class="fa fa-terminal"></i></span>Software Developer
-              </h2>
-              <h2 class="subtitle">
-                  <a href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
+                <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
+                <br />
+                <a style={{fontSize: 14}} href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
               </h2>
             </div>
           </div>

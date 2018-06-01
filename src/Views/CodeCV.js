@@ -10,11 +10,17 @@ class CodeCV extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            readme: "",
             compiling: false
         };
     }
 
     compile = (e) => this.setState({compiling: true});
+
+    compiled = (e) => {
+        document.getElementById("console").innerText = document.getElementById("console").innerText + "\n alex@wilson: ~$";
+        setTimeout(this.props.compile, 700);
+    }
 
     render() {
         document.body.style = 'background: #1d1f21;';
@@ -24,18 +30,12 @@ class CodeCV extends Component {
                     <Code codeString={Alexander} language="cpp" />
                     <br />
                     <br />
-                    <a className="compile-but" onClick={this.compile}>compile</a>
+                    <br />
                     <br />
                     <br />
                     <div id="console">
-                        $ <TypeWriter onTypingEnd={this.props.compile} fixed="true" typing={1}>
+                        alex@wilson: ~$ <TypeWriter onTypingEnd={this.compiled} fixed="true" typing={1}>
                             clang++ alexander.cpp -o resume.out
-                            {/* <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                         </TypeWriter>
                     </div>
                 </div>
@@ -50,8 +50,8 @@ class CodeCV extends Component {
                     <a className="compile-but" onClick={this.compile}>compile</a>
                     <br />
                     <br />
-                    <div id="console" style={{width: 310.88}}>
-                        $
+                    <div id="console" style={{width: 429}}>
+                    alex@wilson: ~$
                     </div>
                 </div>
             );

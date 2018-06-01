@@ -10,6 +10,20 @@
     height: 100vh;
 }
 
+.darkMode {
+    padding-top: 75px;
+    position:relative;
+    z-index: 999;
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+div {
+    /* border: 1px solid black; */
+}
+
 /* .compile-but {
     color: #3273dc;
     cursor: pointer;
