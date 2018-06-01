@@ -3,9 +3,16 @@ import React, { Component } from 'react';
 class App extends Component {
 
   constructor(props) {
+    super(props);
     this.state = {
       compiled: false
     };
+  }
+
+  compile = (e) => {
+    this.setState({
+      compiled: true
+    });
   }
 
   render() {
