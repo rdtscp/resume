@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import CodeCV from './Views/CodeCV.js';
 import CompiledCV from './Views/CompiledCV.js';
 
+import 'bulma/css/bulma.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import './styles.css';
+
 class App extends Component {
 
   constructor(props) {

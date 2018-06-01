@@ -25,7 +25,6 @@ class CompiledCV extends Component {
             </div>
           </div>
           
-          {/* Education */}
           <h3 id="education" className="title is-3">
             <span className="icon is-large"><i className="fa  fa-graduation-cap"></i></span> &nbsp;
             <u>Education</u>
@@ -45,7 +44,7 @@ class CompiledCV extends Component {
 
           <hr />
 
-          {/* Work */}
+
           <h3 id="work_experience" className="title is-3">
             <span className="icon is-large"><i className="fa   fa-briefcase"></i></span> &nbsp;
             <u>Work Experience</u>
@@ -77,7 +76,7 @@ class CompiledCV extends Component {
           
           <hr />
 
-          {/* Skills */}
+
           <h3 id="skills" className="title is-3">
               <span className="icon is-large"><i class="fa fa-code"></i></span> &nbsp;
               <u>Skills</u>
@@ -119,7 +118,7 @@ class CompiledCV extends Component {
           
           <hr />
 
-          {/* Projects */}
+
           <h3 id="projects" className="title is-3">
               <span className="black icon is-large"><a href="https://github.com/acwilson96" className="fa fa-github black"></a></span>&nbsp;
               <u>Projects</u>
@@ -150,6 +149,7 @@ class CompiledCV extends Component {
           <Project title="rent_reminder" github="https://github.com/acwilson96/rent_reminder">
             Small nodejs application to run on my raspberry-pi that will check the date/time every hour, and send emails(to opt-ins) to remind people to pay rent.
           </Project>
+
 
 
         </div>
