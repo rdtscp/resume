@@ -10,7 +10,7 @@ class CompiledCV extends Component {
         <div className="column"></div>
         <div className="column is-two-thirds">        
           <div className="darkMode">
-            <a><span className="icon black"  onClick={this.props.viewSource}><i className="fa fa-2x fa-address-card"></i></span>&nbsp;</a>
+            <a><span className="icon black"  onClick={this.props.viewSource}><i className="fa fa-2x fa-code"></i></span>&nbsp;</a>
           </div>
 
           {/* Name */}
