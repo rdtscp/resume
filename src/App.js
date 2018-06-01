@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import CodeCV from './Views/CodeCV.js';
+import CompiledCV from './Views/CompiledCV.js';
+
 class App extends Component {
 
   constructor(props) {
@@ -18,16 +21,12 @@ class App extends Component {
   render() {
     if (this.state.compiled) {
       return (
-        <div className="App">
-          Compiled Resume
-        </div>
+        <CompiledCV />
       );
     }
     else {
       return (
-        <div className="App">
-          Code Resume
-        </div>
+        <CodeCV />
       );
     }
   }
