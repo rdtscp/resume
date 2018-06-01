@@ -12,24 +12,25 @@ class App extends Component {
     };
   }
 
-  compile = (e) => {
-    this.setState({
-      compiled: true
-    });
-  }
+  compile = (e) => this.setState({ compiled: true });
+
+  isMobileDevice = () => {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
 
   render() {
     if (this.state.compiled) {
-      return (
-        <CompiledCV />
-      );
+          return (<CompiledCV />);
+    } else {
+      if (this.isMobileDevice()) {
+      alert("Cannot View Source on Mobile");
+        return (<CompiledCV />);
+      }
+      else
+        return (<CodeCV compile={this.compile} />);
     }
-    else {
-      return (
-        <CodeCV />
-      );
-    }
-  }
+  } 
+
 }
 
 export default App;

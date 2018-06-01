@@ -1,0 +1,90 @@
+.code-container {
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.compile-but {
+    color: #3273dc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#console {
+    text-align: left;
+    color: white;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+.test {
+    /* border: 1px solid black; */
+}
+
+.home-container {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 3%;
+    right: 3%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    font-size: 0;
+}
+
+.black {
+    color: black;
+}
+
+.link-list {
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.text {
+    font-size: 10px;
+}
+.edu-entry {
+    border-left: 1px solid green;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 5px;
+}
+.work-entry {
+    border-left: 1px solid blue;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 5px;
+}
+.skill-entry {
+    border-left: 1px solid purple;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 5px;
+}
+.project-entry {
+    border-left: 1px solid red;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 5px;
+}
+#contents {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 15px;
+}
+.var {
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 15px;
+}
