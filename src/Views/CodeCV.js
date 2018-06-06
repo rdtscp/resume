@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Code from 'react-code-prettify';
-import TypeWriter from 'react-typewriter';
+import TypeWriter from 'parro-react-typewriter';
 
 import Alexander from '../Resources.js';
 
