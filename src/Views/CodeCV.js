@@ -1,8 +1,47 @@
 import React, { Component } from 'react';
 import Code from 'react-code-prettify';
-import TypeWriter from 'parro-react-typewriter';
+import Terminal from 'react-animated-term'
+import 'react-animated-term/dist/react-animated-term.css'
 
 import Alexander from '../Resources.js';
+
+// const termLines = [
+//     {
+//       text: 'clang++ alexander.cpp -o resume.out',
+//       cmd: true
+//     },
+//     {
+//       text: '$',
+//       cmd: false
+//     }
+//   ]
+
+const spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+
+const termLines = [
+    {
+        text: 'clang++ alexander.cpp -o resume.out',
+        cmd: true,
+        delay: 20
+    },
+    {
+        text: './resume.out',
+        cmd: true,
+        delay: 20
+    },
+    {
+        text: '✔ Loaded app',
+        cmd: false,
+        repeat: true,
+        repeatCount: 5,
+        frames: spinner.map(function (spinner) {
+            return {
+            text: spinner + ' Loading Resume',
+            delay: 40
+            }
+        })
+    },
+  ]
 
 
 class CodeCV extends Component {
@@ -15,11 +54,9 @@ class CodeCV extends Component {
         };
     }
 
-    compile = (e) => this.setState({compiling: true});
-
-    compiled = (e) => {
-        document.getElementById("console").innerText = document.getElementById("console").innerText + "\n alex@wilson: ~$";
-        setTimeout(this.props.compile, 700);
+    compile = (e) => {
+        this.setState({compiling: true});
+        setTimeout(this.props.compile, 5000);
     }
 
     render() {
@@ -31,13 +68,12 @@ class CodeCV extends Component {
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <div id="console">
-                        alex@wilson: ~$ <TypeWriter onTypingEnd={this.compiled} fixed="true" typing={1}>
-                            clang++ alexander.cpp -o resume.out
-                        </TypeWriter>
+                    <div style={{width: 450}}>
+                        <Terminal lines={termLines} interval={80} height={125} white />
                     </div>
+                    <br />
+                    <br />
+                    <br />
                 </div>
             );
         }
@@ -50,9 +86,6 @@ class CodeCV extends Component {
                     <a className="compile-but" onClick={this.compile}>compile</a>
                     <br />
                     <br />
-                    <div id="console" style={{width: 429}}>
-                    alex@wilson: ~$
-                    </div>
                 </div>
             );
         }
