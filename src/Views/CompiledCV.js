@@ -19,7 +19,7 @@ class CompiledCV extends Component {
               <h1 className="title is-1">
                   Alexander Wilson
               </h1>
-              <h2 class="subtitle">
+              <h2 className="subtitle">
                 <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
                 <br />
                 <a style={{fontSize: 14}} href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
@@ -80,27 +80,29 @@ class CompiledCV extends Component {
 
 
           <h3 id="skills" className="title is-3">
-              <span className="icon is-large"><i class="fa fa-code"></i></span> &nbsp;
+              <span className="icon is-large"><i className="fa fa-code"></i></span> &nbsp;
               <u>Skills</u>
           </h3>
           <SkillList title="Programming Languages">
             <table>
-              <tr>
-                  <td>Java</td>
-                  <td>Python</td> 
-                  <td>HTML</td>
-                  <td>PHP</td>
-              </tr>
-              <tr>
-                  <td>C++</td>
-                  <td>JavaScript</td> 
-                  <td>CSS</td>
-                  <td>MIPS</td>
-              </tr>
-              <tr>
-                  <td>C#</td>
-                  <td>C</td> 
-              </tr>
+              <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td>Python</td> 
+                    <td>HTML</td>
+                    <td>PHP</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>JavaScript</td> 
+                    <td>CSS</td>
+                    <td>MIPS</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>C</td> 
+                </tr>
+              </tbody>              
             </table>
           </SkillList>
           <br />
