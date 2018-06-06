@@ -26,7 +26,7 @@ class Project extends Component {
                         <b><a href={this.props.github} className="fa fa-link black"></a>&nbsp; {this.props.title}</b>
                     </h4>
                     <div id="edb_compsci">
-                    <h7 className="title is-7">{this.props.date} </h7>
+                    <h1 className="title is-7">{this.props.date} </h1>
                     <div className="content">
                         <blockquote>
                             {this.props.children}

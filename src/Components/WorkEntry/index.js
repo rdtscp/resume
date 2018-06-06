@@ -32,7 +32,7 @@ class WorkEntry extends Component {
           return (
               <div className="work-entry">  
                   <h4>
-                    <span class="icon">
+                    <span className="icon">
                       <a className="fa fa-caret-down black" onClick={this.toggle}>
                       </a>
                     </span>
@@ -40,7 +40,7 @@ class WorkEntry extends Component {
                   </h4>
                   <div id="kal_2017">
                     <h5><b>{this.props.company},</b> {this.props.location}</h5>
-                    <h7 className="title is-7">{this.props.date} </h7>
+                    <h1 className="title is-7">{this.props.date} </h1>
                     <div className="content">
                       <blockquote>
                         {this.props.children}
@@ -53,7 +53,7 @@ class WorkEntry extends Component {
           return (
             <div className="work-entry">  
                 <h4>
-                  <span class="icon">
+                  <span className="icon">
                     <a className="fa fa-caret-right black" onClick={this.toggle}>
                     </a>
                   </span>

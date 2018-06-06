@@ -19,7 +19,7 @@ class SkillList extends Component {
       if (this.state.visible) {
           return (
             <div className="skill-entry">
-                <h4><span className="icon"><a onClick={this.toggle} class="fa fa-caret-down black"></a></span><b>{this.props.title}</b></h4>
+                <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-down black"></a></span><b>{this.props.title}</b></h4>
                 <div className="content">
                     {this.props.children}
                 </div>
@@ -27,8 +27,8 @@ class SkillList extends Component {
           );
       } else {
           return (
-            <div class="skill-entry">
-                <h4><span class="icon"><a onClick={this.toggle} class="fa fa-caret-right black"></a></span><b>{this.props.title}</b></h4>
+            <div className="skill-entry">
+                <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-right black"></a></span><b>{this.props.title}</b></h4>
             </div>
           );
       }
