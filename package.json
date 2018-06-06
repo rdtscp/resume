@@ -4,12 +4,10 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.7.1",
-    "code-prettify": "^0.1.0",
     "font-awesome": "^4.7.0",
     "react": "^16.4.0",
     "react-code-prettify": "0.0.1",
     "react-dom": "^16.4.0",
-    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-typewriter": "^0.4.1"
   },
