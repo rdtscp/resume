@@ -31,7 +31,7 @@ class CompiledCV extends Component {
             <span className="icon is-large"><i className="fa  fa-graduation-cap"></i></span> &nbsp;
             <u>Education</u>
           </h3>
-          <EducationEntry school="University of Edinburgh - First Class with Honours" degree="BSc Computer Science" date="Sept 2014 - July 2018">
+          <EducationEntry school="University of Edinburgh" classification="First Class with Honours" degree="BSc Computer Science" date="Sept 2014 - July 2018">
               Classes Include:
               <ul>
                 <li>Compiling Techniques</li>                
