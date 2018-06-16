@@ -24,6 +24,8 @@ class EducationEntry extends Component {
                             <a className="fa fa-caret-down black" onClick={this.toggle}></a>
                         </span>
                         <b> {this.props.degree},</b>  <small>{this.props.school}</small>
+                        <br />
+                        <small><i> {this.props.classification} </i></small>
                     </h4>
                     <div id="edb_compsci">
                     <h1 className="title is-7">{this.props.date} </h1>
