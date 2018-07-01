@@ -9,7 +9,7 @@ class Alexander : public Person {
 
         std::time_t unix_dob;
         std::string name                   = "Alexander Wilson";
-        std::string email                  = "acwilson96@protonmail.com";
+        std::string email                  = "contact@acwilson96.com";
         std::string degree                 = "BSc Computer Science";
         std::string university             = "University of Edinburgh";
         std::string location               = "Edinburgh / London";
