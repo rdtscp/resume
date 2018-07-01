@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import CodeCV from './Views/CodeCV.js';
 import CompiledCV from './Views/CompiledCV.js';
@@ -14,6 +15,15 @@ class App extends Component {
     this.state = {
       compiled: true
     };
+
+    // Analytics
+    axios.get('https://acwilson96-activity-tracker.herokuapp.com/visit_url?target=' + window.location.href)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   compile = (e) => this.setState({ compiled: true });
