@@ -131,6 +131,13 @@ class CompiledCV extends Component {
             University Dissertation - Involved writing c++ with inline x86 to evaluate the latencies and bandwidths of the different memory components of the multichip processor.
           </Project>
           <br />
+          <Project title="flat-rota" github="https://github.com/acwilson96/flat-rota-web">
+            WebApp for managing communal Todo's in a flat. The backend manages Users/Flats/Todos and their respective relationship to create rotas.
+            <br />
+            <br />
+            Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a> 
+          </Project>
+          <br />
           <Project title="My Website" github="https://github.com/acwilson96/acwilson96.github.io">
             A website that acts as an index in to who I am and what I have been working on, hosting my most up-to-date CV.
           </Project>
@@ -140,10 +147,6 @@ class CompiledCV extends Component {
             <br />
             <br />
             Live Beta on <a href="https://acwilson96-unet.herokuapp.com/">Heroku</a> 
-          </Project>
-          <br />
-          <Project title="FlatRota" github="https://github.com/acwilson96/flatrota">
-            OS Application and backend server using ExpressJS and websockets to manage who's turn it is to buy communal resources in my flat (for example hand soap or bin bags). Plans to extend to chores as well (for example cleaning bathroom/taking bins out). 
           </Project>
           <br />
           <Project title="sup_script" github="https://github.com/acwilson96/sup_script">
