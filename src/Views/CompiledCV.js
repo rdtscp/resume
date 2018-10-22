@@ -6,42 +6,42 @@ class CompiledCV extends Component {
     document.body.style = 'background: white;';
     return (
       <div className="columns">
-        
-        <div className="column"></div>
-        <div className="column is-two-thirds">        
+
+        <div className="column" />
+        <div className="column is-two-thirds">
           <div className="darkMode">
-            <a><span className="icon black"  onClick={this.props.viewSource}><i className="fa fa-2x fa-code"></i></span>&nbsp;</a>
+            <a><span className="icon black" onClick={this.props.viewSource}><i className="fa fa-2x fa-code"></i></span>&nbsp;</a>
           </div>
 
           {/* Name */}
           <div className="hero-body">
             <div className="container">
               <h1 className="title is-1">
-                  Alexander Wilson
+                Alexander Wilson
               </h1>
               <h2 className="subtitle">
                 <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
                 <br />
-                <a style={{fontSize: 14}} href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
+                <a style={{ fontSize: 14 }} href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
               </h2>
             </div>
           </div>
-          
+
           <h3 id="education" className="title is-3">
             <span className="icon is-large"><i className="fa  fa-graduation-cap"></i></span> &nbsp;
             <u>Education</u>
           </h3>
           <EducationEntry school="University of Edinburgh" classification="First Class with Honours" degree="BSc Computer Science" date="Sept 2014 - July 2018">
-              Classes Include:
+            Classes Include:
               <ul>
-                <li>Compiling Techniques</li>                
-                <li>Computer Architecture</li>
-                <li>Parallel Architecture</li>
-                <li>Operating Systems</li>
-                <li>Extreme Computing</li>
-                <li>Computer Security</li>
-                <li>Computer Networking</li>
-              </ul>
+              <li>Compiling Techniques</li>
+              <li>Computer Architecture</li>
+              <li>Parallel Architecture</li>
+              <li>Operating Systems</li>
+              <li>Extreme Computing</li>
+              <li>Computer Security</li>
+              <li>Computer Networking</li>
+            </ul>
           </EducationEntry>
 
           <hr />
@@ -51,6 +51,14 @@ class CompiledCV extends Component {
             <span className="icon is-large"><i className="fa   fa-briefcase"></i></span> &nbsp;
             <u>Work Experience</u>
           </h3>
+          <WorkEntry title="Software Engineering" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
+            Working With:
+            <ul>
+              <li>C++</li>
+              <li>Python</li>
+            </ul>
+          </WorkEntry>
+          <br />
           <WorkEntry title="Software Engineering Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
             Worked With:
             <ul>
@@ -75,34 +83,34 @@ class CompiledCV extends Component {
           <WorkEntry title="Short Intern Work" company="NAPIER University" location="Edinburgh" date="June 2013">
             Spent a week working with an arduino board to create circuits as part of a robotics bootcamp.
           </WorkEntry>
-          
+
           <hr />
 
 
           <h3 id="skills" className="title is-3">
-              <span className="icon is-large"><i className="fa fa-code"></i></span> &nbsp;
+            <span className="icon is-large"><i className="fa fa-code"></i></span> &nbsp;
               <u>Skills</u>
           </h3>
           <SkillList title="Programming Languages">
             <table>
               <tbody>
                 <tr>
-                    <td>Java</td>
-                    <td>Python</td> 
-                    <td>HTML</td>
-                    <td>PHP</td>
+                  <td>Java</td>
+                  <td>Python</td>
+                  <td>HTML</td>
+                  <td>PHP</td>
                 </tr>
                 <tr>
-                    <td>C++</td>
-                    <td>JavaScript</td> 
-                    <td>CSS</td>
-                    <td>MIPS</td>
+                  <td>C++</td>
+                  <td>JavaScript</td>
+                  <td>CSS</td>
+                  <td>MIPS</td>
                 </tr>
                 <tr>
-                    <td>C#</td>
-                    <td>C</td> 
+                  <td>C#</td>
+                  <td>C</td>
                 </tr>
-              </tbody>              
+              </tbody>
             </table>
           </SkillList>
           <br />
@@ -119,12 +127,12 @@ class CompiledCV extends Component {
               </ul>
             </blockquote>
           </SkillList>
-          
+
           <hr />
 
 
           <h3 id="projects" className="title is-3">
-              <span className="black icon is-large"><a href="https://github.com/acwilson96" className="fa fa-github black"></a></span>&nbsp;
+            <span className="black icon is-large"><a href="https://github.com/acwilson96" className="fa fa-github black"></a></span>&nbsp;
               <u>Projects</u>
           </h3>
           <Project title="Microbenchmarking Intel Xeon Phi" github="https://github.com/acwilson96/MicroBenchmarking-KNL">
@@ -135,7 +143,7 @@ class CompiledCV extends Component {
             WebApp for managing communal Todo's in a flat. The backend manages Users/Flats/Todos and their respective relationship to create rotas.
             <br />
             <br />
-            Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a> 
+            Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a>
           </Project>
           <br />
           <Project title="My Website" github="https://github.com/acwilson96/acwilson96.github.io">
@@ -146,7 +154,7 @@ class CompiledCV extends Component {
             Multi-platform application that provides a 'universal account' for services such as instant messaging, cloud storage(WIP). More features to be determined. Project started as POC to learn web technologies/concepts. Split into 3 projects: unet-core (the api and backend), unet-webapp (the browser application), and unet-mobapp (the mobile application).
             <br />
             <br />
-            Live Beta on <a href="https://acwilson96-unet.herokuapp.com/">Heroku</a> 
+            Live Beta on <a href="https://acwilson96-unet.herokuapp.com/">Heroku</a>
           </Project>
           <br />
           <Project title="sup_script" github="https://github.com/acwilson96/sup_script">
@@ -160,7 +168,7 @@ class CompiledCV extends Component {
 
 
         </div>
-        <div className="column"></div>        
+        <div className="column" />
       </div>
     );
   }
