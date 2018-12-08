@@ -8,8 +8,8 @@ const Alexander = `
 class Alexander : public Person {
 
         std::time_t unix_dob;
-        std::string name                   = "Alexander Wilson";
-        std::string email                  = "contact@acwilson96.com";
+        const std::string name             = "Alexander Wilson";
+        const std::string email            = "acwilson96@gmail.com";
         std::string degree                 = "BSc Computer Science";
         std::string university             = "University of Edinburgh";
         std::string location               = "Edinburgh / London";
@@ -19,16 +19,14 @@ class Alexander : public Person {
             "Compilers", "Parallel Architectures/Systems"
         };
 
-        Alexander() {
-            unix_dob = 822873600;           // Constructed on 29-01-1996
-        }
+        Alexander() : unix_dob(822873600) {} // Constructed on 29-01-1996
         
         // Convert time in seconds to years.
-        int getAge() {
+        int getAge() const {
             std::time_t seconds_alive = std::time(0) - unix_dob;
             return seconds_alive / (60 * 60 * 24 * 365);
         }
-}
+};
 `;
 
 export default Alexander;
