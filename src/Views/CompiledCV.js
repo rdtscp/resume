@@ -22,7 +22,7 @@ class CompiledCV extends Component {
               <h2 className="subtitle">
                 <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
                 <br />
-                <a style={{ fontSize: 14 }} href="https://acwilson96.github.io/acwilson96.pdf">Download</a>
+                <a style={{ fontSize: 14 }} href="https://rdtscp.github.io/acwilson96.pdf">Download</a>
               </h2>
             </div>
           </div>
@@ -132,36 +132,36 @@ class CompiledCV extends Component {
 
 
           <h3 id="projects" className="title is-3">
-            <span className="black icon is-large"><a href="https://github.com/acwilson96" className="fa fa-github black"></a></span>&nbsp;
+            <span className="black icon is-large"><a href="https://github.com/rdtscp" className="fa fa-github black"></a></span>&nbsp;
               <u>Projects</u>
           </h3>
-          <Project title="Microbenchmarking Intel Xeon Phi" github="https://github.com/acwilson96/MicroBenchmarking-KNL">
+          <Project title="Microbenchmarking Intel Xeon Phi" github="https://github.com/rdtscp/MicroBenchmarking-KNL">
             University Dissertation - Involved writing c++ with inline x86 to evaluate the latencies and bandwidths of the different memory components of the multichip processor.
           </Project>
           <br />
-          <Project title="flat-rota" github="https://github.com/acwilson96/flat-rota-web">
+          <Project title="flat-rota" github="https://github.com/rdtscp/flat-rota-web">
             WebApp for managing communal Todo's in a flat. The backend manages Users/Flats/Todos and their respective relationship to create rotas.
             <br />
             <br />
             Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a>
           </Project>
           <br />
-          <Project title="My Website" github="https://github.com/acwilson96/acwilson96.github.io">
+          <Project title="My Website" github="https://github.com/rdtscp/rdtscp.github.io">
             A website that acts as an index in to who I am and what I have been working on, hosting my most up-to-date CV.
           </Project>
           <br />
-          <Project title="unet" github="https://github.com/acwilson96/unet">
+          <Project title="unet" github="https://github.com/rdtscp/unet">
             Multi-platform application that provides a 'universal account' for services such as instant messaging, cloud storage(WIP). More features to be determined. Project started as POC to learn web technologies/concepts. Split into 3 projects: unet-core (the api and backend), unet-webapp (the browser application), and unet-mobapp (the mobile application).
             <br />
             <br />
             Live Beta on <a href="https://acwilson96-unet.herokuapp.com/">Heroku</a>
           </Project>
           <br />
-          <Project title="sup_script" github="https://github.com/acwilson96/sup_script">
+          <Project title="sup_script" github="https://github.com/rdtscp/sup_script">
             A FireFox extension that will automate actions on supremenewyork.com/shop in order to check out items quickly. Includes some minor work on spoofing Google Recaptcha.
           </Project>
           <br />
-          <Project title="rent_reminder" github="https://github.com/acwilson96/rent_reminder">
+          <Project title="rent_reminder" github="https://github.com/rdtscp/rent_reminder">
             Small nodejs application to run on my raspberry-pi that will check the date/time every hour, and send emails(to opt-ins) to remind people to pay rent.
           </Project>
 
