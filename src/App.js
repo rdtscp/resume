@@ -19,10 +19,10 @@ class App extends Component {
     // Analytics
     axios.get("https://acwilson96-activity-tracker.herokuapp.com/visit_url?target=" + window.location.href)
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
       })
       .catch(function (error) {
-        console.log(error);
+        // console.log(error);
       });
   }
 
