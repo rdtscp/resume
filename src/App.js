@@ -42,8 +42,9 @@ class App extends Component {
         alert("Cannot View Source on Mobile");
         return (<CompiledCV viewSource={this.source} />);
       }
-      else
+      else {
         return (<CodeCV compile={this.compile} />);
+      }
     }
   }
 
