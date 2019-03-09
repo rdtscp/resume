@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { EducationEntry, WorkEntry, SkillList, Project } from '../Components/';
+import React, { Component } from "react";
+import { EducationEntry, WorkEntry, SkillList, Project } from "../Components/";
 
 class CompiledCV extends Component {
   render() {
-    document.body.style = 'background: white;';
+    document.body.style = "background: white;";
     return (
       <div className="columns">
 
@@ -140,7 +140,7 @@ class CompiledCV extends Component {
           </Project>
           <br />
           <Project title="flat-rota" github="https://github.com/rdtscp/flat-rota-web">
-            WebApp for managing communal Todo's in a flat. The backend manages Users/Flats/Todos and their respective relationship to create rotas.
+            WebApp for managing communal Todo"s in a flat. The backend manages Users/Flats/Todos and their respective relationship to create rotas.
             <br />
             <br />
             Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a>
@@ -151,7 +151,7 @@ class CompiledCV extends Component {
           </Project>
           <br />
           <Project title="unet" github="https://github.com/rdtscp/unet">
-            Multi-platform application that provides a 'universal account' for services such as instant messaging, cloud storage(WIP). More features to be determined. Project started as POC to learn web technologies/concepts. Split into 3 projects: unet-core (the api and backend), unet-webapp (the browser application), and unet-mobapp (the mobile application).
+            Multi-platform application that provides a "universal account" for services such as instant messaging, cloud storage(WIP). More features to be determined. Project started as POC to learn web technologies/concepts. Split into 3 projects: unet-core (the api and backend), unet-webapp (the browser application), and unet-mobapp (the mobile application).
             <br />
             <br />
             Live Beta on <a href="https://acwilson96-unet.herokuapp.com/">Heroku</a>

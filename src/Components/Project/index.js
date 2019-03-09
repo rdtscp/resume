@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Project extends Component {
 
@@ -26,12 +26,12 @@ class Project extends Component {
                         <b><a href={this.props.github} className="fa fa-link black"></a>&nbsp; {this.props.title}</b>
                     </h4>
                     <div id="edb_compsci">
-                    <h1 className="title is-7">{this.props.date} </h1>
-                    <div className="content">
-                        <blockquote>
-                            {this.props.children}
-                        </blockquote>
-                    </div>
+                        <h1 className="title is-7">{this.props.date} </h1>
+                        <div className="content">
+                            <blockquote>
+                                {this.props.children}
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             );

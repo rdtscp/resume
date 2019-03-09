@@ -1,47 +1,47 @@
-import React, { Component } from 'react';
-import Code from 'react-code-prettify';
-import Terminal from 'react-animated-term'
-import 'react-animated-term/dist/react-animated-term.css'
+import React, { Component } from "react";
+import Code from "react-code-prettify";
+import Terminal from "react-animated-term"
+import "react-animated-term/dist/react-animated-term.css"
 
-import Alexander from '../Resources.js';
+import Alexander from "../Resources.js";
 
 // const termLines = [
 //     {
-//       text: 'clang++ alexander.cpp -o resume.out',
+//       text: "clang++ alexander.cpp -o resume.out",
 //       cmd: true
 //     },
 //     {
-//       text: '$',
+//       text: "$",
 //       cmd: false
 //     }
 //   ]
 
-const spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+const spinner = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 
 const termLines = [
     {
-        text: 'clang++ alexander.cpp -o resume.out',
+        text: "clang++ alexander.cpp -o resume.out",
         cmd: true,
         delay: 20
     },
     {
-        text: './resume.out',
+        text: "./resume.out",
         cmd: true,
         delay: 20
     },
     {
-        text: '✔ Loaded app',
+        text: "✔ Loaded app",
         cmd: false,
         repeat: true,
         repeatCount: 5,
         frames: spinner.map(function (spinner) {
             return {
-            text: spinner + ' Loading Resume',
-            delay: 40
+                text: spinner + " Loading Resume",
+                delay: 40
             }
         })
     },
-  ]
+]
 
 
 class CodeCV extends Component {
@@ -55,12 +55,12 @@ class CodeCV extends Component {
     }
 
     compile = (e) => {
-        this.setState({compiling: true});
+        this.setState({ compiling: true });
         setTimeout(this.props.compile, 5000);
     }
 
     render() {
-        document.body.style = 'background: #1d1f21;';
+        document.body.style = "background: #1d1f21;";
         if (this.state.compiling) {
             return (
                 <div className="code-container">
@@ -68,7 +68,7 @@ class CodeCV extends Component {
                     <br />
                     <br />
                     <br />
-                    <div style={{width: 450}}>
+                    <div style={{ width: 450 }}>
                         <Terminal lines={termLines} interval={80} height={125} white />
                     </div>
                     <br />

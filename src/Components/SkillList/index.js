@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class SkillList extends Component {
 
@@ -16,24 +16,24 @@ class SkillList extends Component {
     }
 
     render() {
-      if (this.state.visible) {
-          return (
-            <div className="skill-entry">
-                <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-down black"></a></span><b>{this.props.title}</b></h4>
-                <div className="content">
-                    {this.props.children}
+        if (this.state.visible) {
+            return (
+                <div className="skill-entry">
+                    <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-down black"></a></span><b>{this.props.title}</b></h4>
+                    <div className="content">
+                        {this.props.children}
+                    </div>
                 </div>
-            </div>
-          );
-      } else {
-          return (
-            <div className="skill-entry">
-                <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-right black"></a></span><b>{this.props.title}</b></h4>
-            </div>
-          );
-      }
+            );
+        } else {
+            return (
+                <div className="skill-entry">
+                    <h4><span className="icon"><a onClick={this.toggle} className="fa fa-caret-right black"></a></span><b>{this.props.title}</b></h4>
+                </div>
+            );
+        }
 
-  }
+    }
 
 }
 

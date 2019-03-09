@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class EducationEntry extends Component {
 
@@ -28,12 +28,12 @@ class EducationEntry extends Component {
                         <small><i> {this.props.classification} </i></small>
                     </h4>
                     <div id="edb_compsci">
-                    <h1 className="title is-7">{this.props.date} </h1>
-                    <div className="content">
-                        <blockquote>
-                        {this.props.children}
-                        </blockquote>
-                    </div>
+                        <h1 className="title is-7">{this.props.date} </h1>
+                        <div className="content">
+                            <blockquote>
+                                {this.props.children}
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             );
