@@ -34,13 +34,16 @@ class CompiledCV extends Component {
           </h3>
           <WorkEntry title="Software Engineering" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
             Systems Infrastructure - Database Technologies:
+            <br />
             C++/Python: Used profiling driven methodology to improve sharded databases disk footprint and coldread performance by up to 5x(5s to 1s), by using bloom filters. Migrated untested python infrastructure
 to GitHub and set up CI/CD with unit tests. Developed tooling for managing databases on the on-prem
 clusters.
           </WorkEntry>
           <br />
           <WorkEntry title="Software Engineering Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
-            C++/C#/.NET: Prototyped integrating legacy C++ applications with new C applications. Presented
+            C++/C#/.NET:
+            <br />
+            Prototyped integrating legacy C++ applications with new C applications. Presented
 my work to the entire company
           </WorkEntry>
 
@@ -133,6 +136,7 @@ my work to the entire company
             <br />
             Live Beta on <a href="https://flat-rota.herokuapp.com/">Heroku</a>
           </Project>
+          <br />
           <Project title="My Website" github="https://github.com/rdtscp/rdtscp.github.io">
             A website that acts as an index in to who I am and what I have been working on, hosting my most up-to-date CV.
           </Project>
