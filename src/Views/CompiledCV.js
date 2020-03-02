@@ -110,7 +110,6 @@ my work to the entire company
 
           <hr />
 
-
           <h3 id="projects" className="title is-3">
             <span className="black icon is-large"><a href="https://github.com/rdtscp" className="fa fa-github black"></a></span>&nbsp;
               <u>Projects</u>
