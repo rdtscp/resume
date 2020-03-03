@@ -32,7 +32,7 @@ class CompiledCV extends Component {
             <span className="icon is-large"><i className="fa   fa-briefcase"></i></span> &nbsp;
             <u>Work Experience</u>
           </h3>
-          <WorkEntry title="Software Engineering" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
+          <WorkEntry title="Software Engineer II" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
             Systems Infrastructure - Database Technologies:
             <br />
             <li> C++/Python: Used profiling driven methodology to improve sharded databases disk footprint and coldread performance by up to 5x(5s to 1s), by using bloom filters. </li>
@@ -40,7 +40,7 @@ class CompiledCV extends Component {
             <li> Designed and implemented (using TDD) automated processes, monitoring, alerting, and tooling to aid in managing databases on the on-prem clusters. </li>
           </WorkEntry>
           <br />
-          <WorkEntry title="Software Engineering Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
+          <WorkEntry title="Software Engineer Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
             C++/C#/.NET:
             <br />
             Integrated a legacy C++ application with a newer C applications using .NET. Involved learning in-house tooling and application architecture. Presented my work to the entire company to kick off the products next-gen development.
