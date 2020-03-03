@@ -35,16 +35,15 @@ class CompiledCV extends Component {
           <WorkEntry title="Software Engineering" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
             Systems Infrastructure - Database Technologies:
             <br />
-            C++/Python: Used profiling driven methodology to improve sharded databases disk footprint and coldread performance by up to 5x(5s to 1s), by using bloom filters. Migrated untested python infrastructure
-to GitHub and set up CI/CD with unit tests. Developed tooling for managing databases on the on-prem
-clusters.
+            <li> C++/Python: Used profiling driven methodology to improve sharded databases disk footprint and coldread performance by up to 5x(5s to 1s), by using bloom filters. </li>
+            <li> Migrated untested python infrastructure to GitHub and set up CI/CD with unit tests. </li>
+            <li> Designed and implemented (using TDD) automated processes, monitoring, alerting, and tooling to aid in managing databases on the on-prem clusters. </li>
           </WorkEntry>
           <br />
           <WorkEntry title="Software Engineering Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
             C++/C#/.NET:
             <br />
-            Prototyped integrating legacy C++ applications with new C applications. Presented
-my work to the entire company
+            Integrated a legacy C++ application with a newer C applications using .NET. Involved learning in-house tooling and application architecture. Presented my work to the entire company to kick off the products next-gen development.
           </WorkEntry>
 
           <hr />
@@ -76,7 +75,7 @@ my work to the entire company
             <table>
               <tbody>
                 <tr>
-                  <td>C++</td>
+                  <td>C++ 11/14/17</td>
                   <td>Python 2/3</td>
                   <td>BASH</td>
                   <td>C</td>
@@ -118,7 +117,7 @@ my work to the entire company
               <u>Projects</u>
           </h3>
           <Project title="Microbenchmarking Intel Xeon Phi" github="https://github.com/rdtscp/MicroBenchmarking-KNL">
-            University Dissertation - Involved writing c++ with inline x86 to evaluate the latencies and bandwidths of the different memory components of the multichip processor.
+            University Dissertation - Involved writing c++ with inline x86 to evaluate the latencies and bandwidths of the different memory components of the multichip processor. Required extensive research into computer architecture and how code is translated into machine instructions/opcodes.
           </Project>
           <br />
           <br />
