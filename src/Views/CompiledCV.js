@@ -38,7 +38,7 @@ class CompiledCV extends Component {
             <li> C++/Python: Used profiling driven methodology to improve databases disk footprint and cold read performance by up to 5x(5s to 1s), by using bloom filters. Created a low risk deployment plan to ensure smooth release. </li>
             <li> Migrated untested python infrastructure to GitHub adding CI/CD and unit tests.</li>
             <li> Designed and implemented (using TDD) cloud deployed services, automated processes, monitoring, alerting, and tooling to aid in managing databases on the on-prem clusters.</li>
-            <li> Evaluation of systems scalability for on-boarding new clients or providing substantial new features. Organised meetings and worked with multiple teams (globally).</li>
+            <li> Evaluation of systems scalability to on-board new clients or provide substantial new features. Organised meetings and worked with multiple teams globally. Profiling/measuring actual performance of systems.</li>
             <li> Regular maintenance of a legacy codebase. E.G. Bugfixes and refactors.</li>
           </WorkEntry>
           <br />
