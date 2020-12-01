@@ -4,12 +4,12 @@ class WorkEntry extends Component {
 
   constructor(props) {
     super(props);
-    if (this.props.endyear === null || this.props.endyear === undefined) {
+    if (this.props.date === null || this.props.date === undefined) {
       this.state = {
         visible: false
       };
     }
-    else if ((new Date()).getFullYear() - parseInt(this.props.endyear, 10) < 3) {
+    else if (this.props.date.includes("Present")) {
       this.state = {
         visible: true
       };

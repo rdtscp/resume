@@ -32,14 +32,18 @@ class CompiledCV extends Component {
             <span className="icon is-large"><i className="fa   fa-briefcase"></i></span> &nbsp;
             <u>Work Experience</u>
           </h3>
-          <WorkEntry title="Software Engineer II" company="FactSet" location="London" date="August 2018 - Present" endyear={(new Date()).getFullYear()}>
+          <WorkEntry title="Software Engineer" company="Squarepoint Capital" location="London" date="August 2020 - Present" endyear={(new Date()).getFullYear()}>
+            Risk Technology:
+            <br />
+          </WorkEntry>
+          <br />
+          <WorkEntry title="Software Engineer II" company="FactSet" location="London" date="August 2018 - August 2020" endyear="2020">
             Systems Infrastructure - Database Technologies:
             <br />
-            <li> C++/Python: Used profiling driven methodology to improve databases disk footprint and cold read performance by up to 5x(5s to 1s), by using bloom filters. Created a low risk deployment plan to ensure smooth release. </li>
-            <li> Migrated untested python infrastructure to GitHub adding CI/CD and unit tests.</li>
-            <li> Designed and implemented (using TDD) cloud deployed services, automated processes, monitoring, alerting, and tooling to aid in managing databases on the on-prem clusters.</li>
-            <li> Evaluation of systems scalability to on-board new clients or provide substantial new features. Organised meetings and worked with multiple teams globally. Profiling/measuring actual performance of systems.</li>
-            <li> Regular maintenance of a legacy codebase. E.G. Bugfixes and refactors.</li>
+            <li> C++: Profiling and analysing in-house database technology to improve read performance. </li>
+            <li> Migrated untested python infrastructure to GitHub adding CI/CD and unit tests. </li>
+            <li> Designed and implemented (using TDD) cloud deployed services, monitoring, alerting, and tooling for on-prem systems. </li>
+            <li> Evaluation of systems scalability to on-board new clients/features. </li>
           </WorkEntry>
           <br />
           <WorkEntry title="Software Engineer Intern" company="KAL" location="Edinburgh" date="June 2017 - Sept 2017" endyear="2017">
