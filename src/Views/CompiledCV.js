@@ -22,7 +22,7 @@ class CompiledCV extends Component {
               <h2 className="subtitle">
                 <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
                 <br />
-                <a style={{ fontSize: 14 }} href="https://rdtscp.github.io/acwilson96.pdf">Download</a>
+                <a style={{ fontSize: 14 }} href="https://rdtscp.github.io/rdtscp.pdf">Download</a>
               </h2>
             </div>
           </div>
@@ -32,9 +32,18 @@ class CompiledCV extends Component {
             <span className="icon is-large"><i className="fa   fa-briefcase"></i></span> &nbsp;
             <u>Work Experience</u>
           </h3>
-          <WorkEntry title="Software Engineer" company="Squarepoint Capital" location="London" date="August 2020 - Present" endyear={(new Date()).getFullYear()}>
+          <WorkEntry title="Software Engineer" company="Meta" location="London" date="June 2022 - Present" endyear={(new Date()).getFullYear()}>
+            Systems Infrastructure
+            <br />
+          </WorkEntry>
+          <br />
+          <WorkEntry title="Software Engineer" company="Squarepoint Capital" location="London" date="August 2020 - June 2022" endyear="2022">
             Risk Technology:
             <br />
+            <li> Worked on stateless C++ microservices to perform real time processing of trades to track position. Services were highly multithreaded in order to handle millions of trades per day. Made use a pub/sub messaging queues, and KDB databases for real-time and historical data. Services were highly robust. </li>
+            <li> Designed, implemented, and tested C++ microservices to accompany position keeping service mentioned above for various bespoke business needs.</li>
+            <li> Set up metrics, monitoring and alerting on production services using Prometheus/Grafana/VictorOps. </li>
+            <li> Implemented recon/reporting jobs for data parity between old and new systems in order to safely migrate/deprecate legacy systems. </li>
           </WorkEntry>
           <br />
           <WorkEntry title="Software Engineer II" company="FactSet" location="London" date="August 2018 - August 2020" endyear="2020">
@@ -60,7 +69,7 @@ class CompiledCV extends Component {
           </h3>
           <EducationEntry school="University of Edinburgh" classification="First Class with Honours" degree="BSc Computer Science" date="Sept 2014 - July 2018">
             Classes Include:
-              <ul>
+            <ul>
               <li>Compiling Techniques</li>
               <li>Computer Architecture</li>
               <li>Parallel Architecture</li>
@@ -75,7 +84,7 @@ class CompiledCV extends Component {
 
           <h3 id="skills" className="title is-3">
             <span className="icon is-large"><i className="fa fa-code"></i></span> &nbsp;
-              <u>Skills/Interests</u>
+            <u>Skills/Interests</u>
           </h3>
           <SkillList title="Languages/Technologies">
             <table>
@@ -120,7 +129,7 @@ class CompiledCV extends Component {
 
           <h3 id="projects" className="title is-3">
             <span className="black icon is-large"><a href="https://github.com/rdtscp" className="fa fa-github black"></a></span>&nbsp;
-              <u>Projects</u>
+            <u>Projects</u>
           </h3>
           <Project title="Microbenchmarking Intel Xeon Phi" github="https://github.com/rdtscp/MicroBenchmarking-KNL">
             University Dissertation - Involved writing c++ with inline x86 to evaluate the latencies and bandwidths of the different memory components of the multichip processor. Required extensive research into computer architecture and how code is translated into machine instructions/opcodes.
