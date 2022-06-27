@@ -36,11 +36,10 @@ class WorkEntry extends Component {
               <a className="fa fa-caret-down black" onClick={this.toggle}>
               </a>
             </span>
-            <b> {this.props.title} </b>
+            <b> {this.props.company} - {this.props.title}, {this.props.location} </b>
           </h4>
-          <div id="kal_2017">
-            <h5><b>{this.props.company},</b> {this.props.location}</h5>
-            <h1 className="title is-7">{this.props.date} </h1>
+          <div>
+            <h5>{this.props.date} </h5>
             <div className="content">
               <blockquote>
                 {this.props.children}
@@ -57,7 +56,7 @@ class WorkEntry extends Component {
               <a className="fa fa-caret-right black" onClick={this.toggle}>
               </a>
             </span>
-            <b> {this.props.title} </b>
+            <b>{this.props.company} - {this.props.title}, {this.props.location} </b>
           </h4>
         </div>
       );
