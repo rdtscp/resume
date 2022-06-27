@@ -22,7 +22,7 @@ class CompiledCV extends Component {
               <h2 className="subtitle">
                 <span className="icon"><i className="fa fa-terminal"></i></span>Software Developer
                 <br />
-                <a style={{ fontSize: 14 }} href="https://rdtscp.github.io/acwilson96.pdf">Download</a>
+                <a style={{ fontSize: 14 }} href="https://rdtscp.github.io/rdtscp.pdf">Download</a>
               </h2>
             </div>
           </div>
